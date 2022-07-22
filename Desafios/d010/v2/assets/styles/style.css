@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fonts/idroid.otf');
+}
+
+@font-face {
+    font-family: 'Bedas Neue';
+    src: url('../fonts/BebasNeue-Regular.otf');
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bedas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    color: white;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.384);
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor6);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor7);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+main strong {
+    color: var(--cor6);
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor6);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    width: 100%;
+}
+
+main img#bugdroid {
+    max-width:  350px;
+    display: block;
+    margin: auto;
+}
+
+main aside {
+    background-color: var(--cor3);
+}
+
+main aside > ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > strong {
+    color: red;
+}

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('../fonts/idroid.otf');
+}
+
+@font-face {
+    font-family: 'Bedas Neue';
+    src: url('../fonts/BebasNeue-Regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84e1ad;
+}
+
+header {
+    margin: 0;
+    padding-top: 25px;
+    text-align: center;
+    background-image: linear-gradient(#3cd782, #1a5c38 80%);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    margin: 0;
+    font-family: 'Bedas Neue', cursive;
+}
+
+header > nav {
+    margin-top: 10px;
+    padding: 9px;
+    text-align: left;
+    text-shadow: none;
+    font-weight: bold;
+}
+header > nav > a {
+    margin: 0px 0px;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+}
+
+header > nav > a:hover {
+    background-color: #2fa866;
+    font-weight: normal;
+}
+
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0px auto 10px auto;
+    padding: 15px;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.411);
+}
+
+h2 {
+    margin: auto;
+    font-family: 'idroid', Helvetica, sans-serif;
+    font-size: 1.9em;
+    color: #195b37;
+}
+
+h3 {
+    padding: 5px;
+    font-family: 'idroid';
+    color: #195b37;
+    background-image: linear-gradient(to right, #c3ead4, #c3ead400)
+}
+
+p {
+    text-indent: 40px;
+}
+
+.justifyImg {
+    display: flex;
+    justify-content: center;
+}
+
+#video-sec {
+    position: relative;
+    background-color: #1a5c38;
+    height: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+#video-sec > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#extra {
+    background-color: #c5ebd6;
+    border-radius: 7px;
+    padding: 0 15px 15px 15px;
+}
+
+#extra > h4 {
+    background-color: #2fa866;
+    color: white;
+    padding: 10px;
+    border-radius: 7px 7px 0 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+#extra > ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #1a5c38;
+    color: #c5ebd6;
+    padding: 1px;
+    text-align: center;
+}
+
+footer > p > span {
+    color: white;
+    font-weight: bold;
+}
+
+.internal-link {
+    text-decoration: none;
+    color: #1a5c38;
+    font-weight: bold;
+}
+
+.external-link::after {
+    content: '🔗';
+}

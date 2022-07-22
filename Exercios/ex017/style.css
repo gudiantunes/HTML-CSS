@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@font-face {
+    font-family: 'Sci-fi';
+    src: url(assets/fonts/OriginTech\ personal\ use.ttf) format('truetype'), url(assets/fonts/OriginTech\ personal\ use.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sci-fi', 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Sci-fi', 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    text-indent: 20px;
+}

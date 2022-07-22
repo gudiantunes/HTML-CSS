@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: #4AFA89;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #257A43;
+    
+}
+
+h2 {
+    color: #257A43;
+}
+
+p {
+    margin-left: 60px;
+}
+
+#principal {
+    font-size: 3em;
+    background-color: #123B20;
+    color: white;
+    text-align: center;
+}
+
+.segundario {
+    margin-left: 30px;
+}
+

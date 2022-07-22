@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Tags</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        header {
+            display: flex;
+            padding: 20px;
+            background-color: lightgrey;
+            box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.281);
+        }
+        header > nav {
+            margin: auto 0 auto 50px;
+            background-color: gray;
+            padding: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+            
+        }
+        header > nav > a {
+            margin: 5px;
+            color: black;
+            text-decoration: none;
+        }
+        main {
+            margin: 25px;
+        }
+        article {
+            margin-bottom: 15px;
+        }
+        .link-externo{
+            text-decoration: none;
+            background-color: lightblue;
+            padding: 2px 5px;
+            margin-top: 5px;
+        }
+        .link-externo::before {
+            content: ">> ";
+        }
+        footer {
+            background-color: black;
+            color:white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: inset -13px -17px 25px 1px rgba(0, 0, 0, 0.774);
+        }
+        div#bola>div#sombra{
+            width: 100px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            z-index: -1;
+            margin-top: 62px;
+            margin-left: 24px;
+            border-radius: 50%;
+            box-shadow: inset 1px 1px 25px 0px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Massa</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section>
+            <article class>
+                <h2>Titulo do artigo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aperiam molestias totam atque vero odit cupiditate repellendus dolor similique error! Quasi quaerat eaque aliquam enim voluptates magnam reiciendis maiores ipsam?</p>
+            </article>
+            <article>
+                <h2>Este é outro artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reiciendis tenetur exercitationem eum autem velit? Omnis voluptas nihil ab a fugiat vel molestiae dolor natus aperiam, magni delectus libero maiores.</p>
+                <aside>
+                    <a href="#" class="link-externo">Fonte do artigo</a>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>By: Goodinho</p>
+    </footer>
+    <div id="bola">
+        <div id="sombra"></div>
+    </div>
+</body>
+</html>
