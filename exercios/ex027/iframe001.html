@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de iframes</title>
+    <style>
+        iframe#tela {
+            width: 100%;
+            height: 500px;
+            border: 3px solid gray;
+            border-radius: 10px;
+            background-color: lightcyan;
+        }
+    </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
@@ -16,16 +25,20 @@
             <a href="pages/pagina001.html" target="tela">Primeira pagina</a>
         </li>
         <li>
-            <a href="index.html" target="tela">segunda pagina</a>
+            <a href="pages/pagina002.html" target="tela">segunda pagina</a>
         </li>
         <li>
-            <a href="#">Terceira pagina</a>
+            <a href="pages/pagina003.html" target="tela">Terceira pagina</a>
+        </li>
+        <li>
+            <a href="index.html" target="tela">Pagina index
+            </a>
         </li>
     </ul>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni harum nam autem cupiditate exercitationem. Nihil assumenda laboriosam quia deleniti itaque ea. Aliquid provident temporibus veniam atque illo hic, fuga repellat!
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta natus ipsa, provident similique beatae, ducimus architecto facere aspernatur laudantium rerum dolorem minima ipsam qui corporis eius officia sunt, possimus voluptatibus.
     </p>
-    <iframe src="" frameborder="0" id="tela" name="tela">Seu navegador não pode exibir este conteudo.</iframe>
+    <iframe srcdoc="<h1>Escolha uma opção acima</h1>" frameborder="0" id="tela" name="tela">Seu navegador não pode exibir este conteudo.</iframe>
 </body>
 </html>
