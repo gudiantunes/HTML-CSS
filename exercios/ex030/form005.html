@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Parte 5</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+            <p>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+                
+            </p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" id="sexm"> 
+                <label for="sexm">Masculino</label>
+                <input type="radio" name="sex" id="sexf"> 
+                <label for="sexf">Feminino</label>
+                <input type="radio" name="sex" id="sexo">
+                <label for="sexo">Outro</label>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes</legend>
+            <label for="fut">
+                <input type="checkbox" name="fut" id="fut">
+                Futebol
+            </label>
+            <label for="nat">
+                <input type="checkbox" name="nat" id="nat">
+                Natação
+            </label>
+            <label for="f1">
+                <input type="checkbox" name="f1" id="f1">
+                Fórmula 1
+            </label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

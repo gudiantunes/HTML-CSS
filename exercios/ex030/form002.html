@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Parte 2</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="name">Usuário:</label>
+            <input type="text" name="name" id="name" required placeholder="Serumaninho" maxlength="50" size="8" autocomplete="username">
+        </p>
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required minlength="8" placeholder="********" maxlength="25" size="15" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
