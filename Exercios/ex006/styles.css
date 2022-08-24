@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* use esses caracteres para criar um comentario */
+
+body {
+	background-color: lightgoldenrodyellow;
+	color: chocolate;
+	font-size: 12pt;
+	font-family: Arial;
+}
+
+h1 {
+	color: brown;
+	font-size: 30pt;
+}
+
+h2 {
+	font-size: 21pt;
+}
+
+p {
+	color: blueviolet;
+	font-family: Comic Sans;
+	font-size: 14pt;
+}

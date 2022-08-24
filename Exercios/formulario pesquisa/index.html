@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <form action="/processo-formulario" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="genero">Genero:</label>
+                <label>
+                    <input type="radio" name="genero" value="feminino" class="input-genero"> Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino" class="input-genero"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="outro" class="input-genero"> Outro
+                </label>
+            </div>
+            <div id="area-atauacao">
+                <p>Area de atuação</p>
+                <label>
+                    <input type="checkbox" name="atuacao" value="front" class="atuacao-input" id="front-select">
+                    Front End
+                </label>
+                <label>
+                    <input type="checkbox" name="atuacao" value="back" class="atuacao-input" id="back-select">
+                    Back End
+                </label>
+                <div class="area-knowns" id="front-knowns">
+                    <label>
+                        <input type="checkbox" name="language" value="html" class="lang-input" id="html">
+                        HTML
+                    </label>
+                </div>
+                <div class="area-knowns" id="back-knowns">
+                    <label>
+                        <input type="checkbox" name="language" value="java" class="lang-input">
+                        Java
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
