@@ -1,0 +1,71 @@
+// import
+@import './saas-comps/resets';
+@import './saas-comps/variables';
+
+// functions
+@function weight($w-name) {
+    @return map-get($font-weights, $w-name);
+}
+
+@function get-font($f-name) {
+    @return map-get($font-fam, $f-name);
+}
+
+//mixins
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: $direction;
+}
+
+@mixin theme($light: true) {
+    @if $light {
+        background: lighten($primary-color, $amount: 100%);
+        color: darken($text-color, $amount: 100%);
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:$mobile-size) {
+        @content;
+    }
+}
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    font-family: get-font('content');
+    font-weight: weight('bold');
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    @include flex-center(row);
+    // Nesting //
+    h1 {
+       font-family: get-font('title'); //
+       text-align: center;
+    }
+    
+    p {
+        text-align: justify;
+    }
+
+    .main-paragraph {
+        margin: 0 auto;
+        text-align: right;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    @include mobile {
+        flex-direction: column
+    }
+}
+
+.light {
+    @include theme(false);
+}

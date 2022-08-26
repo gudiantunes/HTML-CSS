@@ -1,0 +1,66 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background-color: transparent;
+            text-align: right;
+            &__item {
+                display: inline;
+
+                padding-right: 1.5rem;
+            }
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .about__bio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+
+        .about__img {
+            height: 40vh;
+
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+}
+
+@include media-lg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        &__project {
+            min-width: 300px;
+        }
+    }
+    .social-icons {
+        flex-direction: row;
+    }
+    footer {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@include media-xl {
+    .my-projects {
+        .about__bio-img {
+            height: 50vh;
+        }
+    }
+    .projects {
+        width: 60vw;
+    }
+}
